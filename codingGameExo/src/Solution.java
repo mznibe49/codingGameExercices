@@ -619,4 +619,15 @@ public class Solution {
 
         return result;
     }
+
+    // reecrire la methode concate optimisé de deux chaine de caractere
+    public String oneFromTwo(String s1, String s2){
+        /*
+        mause réponse return s1 + s2 ; // le + consomme bcp en memoire vu qu'il fait un new String a chaque fois
+         */
+        // bonne reponse
+        StringBuilder sb = new StringBuilder(s1);
+        sb.append(s2);
+        return sb.toString();
+    }
 }
