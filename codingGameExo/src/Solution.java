@@ -619,6 +619,17 @@ public class Solution {
 
         return result;
     }
+    
+    public int[] removeDuplicateV2(int [] array){
+        Set<Integrer> set = New LinkedHashSet<>();
+        for(int elt : array)
+            set.add(elt);
+        int[] result = new int[set.size()];
+        int index = 0;
+        for(Integrer elt : set)
+            result[i++] = elt;
+        return result;
+    }
 
     // reecrire la methode concate optimisé de deux chaine de caractere
     public String oneFromTwo(String s1, String s2){
