@@ -632,8 +632,11 @@ public class Solution {
     }
     
       public static int[] removeDuplicateV3(int [] array){
-
-        return Arrays.stream(array).boxed().distinct().mapToInt(i->i).toArray(); //boxed() : int->Integer   
+/*
+         boxed() : int->Integer   
+        MaptoInt() -> Returns a stream of int (Integer -> int)  
+*/
+        return Arrays.stream(array).boxed().distinct().mapToInt(i->i).toArray(); 
     }
 
     // reecrire la methode concate optimisé de deux chaine de caractere
