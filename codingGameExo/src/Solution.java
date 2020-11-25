@@ -630,6 +630,11 @@ public class Solution {
             result[i++] = elt;
         return result;
     }
+    
+      public static int[] removeDuplicateV3(int [] array){
+
+        return Arrays.stream(array).boxed().distinct().mapToInt(i->i).toArray(); //boxed() : int->Integer   
+    }
 
     // reecrire la methode concate optimisé de deux chaine de caractere
     public String oneFromTwo(String s1, String s2){
